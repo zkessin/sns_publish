@@ -3,6 +3,7 @@
 -export([publish/3]).
 
 publish(Topic, Subject, Message) ->
+  aws_credentials:s3(),
   Params = [{"Subject", Subject},
             {"TopicArn", Topic},
             {"AWSAccesKeyId", "AccessKey"},
