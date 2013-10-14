@@ -1,0 +1,12 @@
+{application, sns_publish,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { sns_publish_app, []}},
+  {env, []}
+ ]}.
